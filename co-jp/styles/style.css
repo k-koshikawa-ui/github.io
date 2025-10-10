@@ -1,0 +1,90 @@
+html {
+    font-size: 30px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルの高さになった */
+    font-family: "Open Sans", sans-serif; /* これが Google フォントから取得した残りの出力になるはず。 */
+  }
+
+  body {
+    background-color: #fff;
+    padding: 0 20px 20px 0;
+  }
+
+  header {
+    max-width:1080px;
+    height:80px;
+    display:flex;
+    position:relative;
+
+    span{
+      align-self:center;
+      padding:0 15px;
+      font-size:15px;
+    }
+    span.after::after{
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 15px;
+      margin-left: 6px;
+      position: absolute;
+      top: 36px;
+      transform: rotate(90deg);
+      background: url(../images/arrow_gray.svg) no-repeat;
+    }
+
+    
+    .right{
+      align-self:center;
+      width:auto;
+      height:30px;
+    }
+  }
+  
+  .fv{
+    position:relative;
+
+    .fv2{
+      img {
+        width:1500px;
+      }  
+    }
+    .fv3{
+      img {
+        position: absolute;
+        top: 25px;
+        width: auto;
+        height: 350px;
+        left: 650px;
+      }  
+    }
+
+    .fv-text{
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      color: #fff;
+
+
+        span.fv-text-1{
+          font-size:1.0rem;
+        }
+
+        span.fv-text-2{
+          font-size:1.5rem;
+        }
+    }
+  }
+
+
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+  p,
+  li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
